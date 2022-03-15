@@ -3,7 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const date = require(__dirname + "/date.js");
-
+const port = process.env.PORT || 8080
 const app = express();
 const items = ["Wake up", "Sleep", "Eat Food"];
 const workItems = [];
@@ -56,6 +56,6 @@ app.get("/about", (req, res) => {
 });
 
 
-app.listen(8080, () => {
+app.listen(port, () => {
   console.log("Server started on port 3000");
 });
