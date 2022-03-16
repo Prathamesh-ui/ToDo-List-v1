@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const date = require(__dirname + "/date.js");
 const port = process.env.PORT || 8080
 const app = express();
-const items = ["Wake up", "Sleep", "Eat Food"];
+const items = ["Buy Food", "Cook Food", "Eat Food"];
 const workItems = [];
 
 app.set('view engine', 'ejs');
